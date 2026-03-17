@@ -5,7 +5,7 @@ import java.util.Stack;
 public class Ejercicio01 {
 
 	public static void colapsar(Stack<Integer> pila) {
-		if (pila.isEmpty())
+		if (pila.isEmpty() || pila.size() == 0)
 			return;
 		int primero = pila.pop();
 		int segundo = pila.pop();
@@ -21,6 +21,5 @@ public class Ejercicio01 {
 	}
 
 	public static void main(String[] args) {
-
 	}
 }

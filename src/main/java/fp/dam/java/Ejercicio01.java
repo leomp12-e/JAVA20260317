@@ -7,16 +7,15 @@ public class Ejercicio01 {
 	public static void colapsar(Stack<Integer> pila) {
 		if (pila.isEmpty())
 			return;
-		int primero;
-		int segundo;
+		int primero = pila.pop();
+		int segundo = pila.pop();
 		colapsar(pila);
 
 		if (!pila.isEmpty()) {
-			pila.pop();
 			pila.push(primero + segundo);
 		}
-	
-		if(pila.size() == 1 || pila.size() == 3 || pila.size() == 5 || pila.size() == 7 || pila.size() == 9) {
+
+		if (pila.size() == 1 || pila.size() == 3 || pila.size() == 5 || pila.size() == 7 || pila.size() == 9) {
 			pila.peek();
 		}
 	}
